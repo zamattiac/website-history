@@ -1,0 +1,57 @@
+<html><h3><p id="name" style="position: absolute; bottom: 0px;"></p></h3>
+<script>
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+d.toUTCString();
+    document.cookie = cname + "=" + cvalue + "; " + expires;
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1);
+        if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+    }
+    return "";
+}
+
+function checkCookie() {
+    var user = getCookie("username");
+    if (user != "") {
+        document.getElementById("name").innerHTML =
+        "::browsing as " + user + "::";
+    } else {
+        user = prompt("Sign in to confirm ESCIRC membership to access this protected resource. \n\n Do not put Darty Jackson.","");
+        user = user.toLowerCase();
+        if (user != "" && user != null) {
+            setCookie("username", user, 365);
+        }
+    }
+}
+</script>
+<head><script src="name.js"></script><title>Naughty Words</title></head>
+<style src="standard.css"></style>
+<body bgcolor="#FFFFE5"><center><br><br><br><h3>Inoffensive Terminology for Mature Discussion</h3><br><br><br></center>
+<!--<h2>Politically correct terms for engineering discourse:<br><br><br></h2>-->
+<!--<div id="vagina"><h4>Women:</h4><br>Vagine<br>Bagina<br>Vagine-machine<br>Vaginha<br>Virgina</div>-->
+<!--<div id="penis"><h4>Male:</h4><br>Penoa/penoit<br>Peen<br>Weewee</div>-->
+<!--<div id="butt"><h4>Everyone!</h4><br>Bootoir<br>Anise<br>Bunghole<br>Bungelow<br>Bhungra</div>-->
+<table align="center" cellpadding="10px" bgcolor="#FFFF99">
+    <tr><th class="penis"><p>Male terms</p></th><th class="vagina"><p>Female terms</p></th><th class="butt"><p>Backdoor Terms</p></th></tr>
+    <!--<tr><th class="penis"></th><br><th class="vagina"><br></th><th class="butt"><br></th></tr>-->
+    <tr><th class="penis">Dickle</th><th class="vagina">Coochella</th><th class="butt">Bouttoir</th></tr>
+    <tr><th class="penis">Penoa/pinoit</th><th class="vagina">Vaginha</th><th class="butt">Bungelow</th></tr>
+    <tr><th class="penis">Peen</th><th class="vagina">Bagina</th><th class="butt">Bhungra-hole</th></tr>
+    <tr><th class="penis">Philip</th><th class="vagina">Vagine</th><th class="butt">Anise</th></tr>
+    <tr><th class="penis">Jimmy</th><th class="vagina">Vagine-machine</th><th class="butt">Poop-chute</th></tr>
+    <tr><th class="penis"></th><th class="vagina">Vajayjay</th><th class="butt">Bunghole</th></tr>
+    <tr><th class="penis"></th><th class="vagina">University of Virgina</th><th class="butt"></th></tr>
+    <tr><th class="penis"></th><th class="vagina">Pooj</th><th class="butt"></th></tr>
+    <tr><th class="penis"></th><th class="vagina">Roberta Gwathmey</th><th class="butt"></th></tr>
+    </table>
+
+</body>
+</html>

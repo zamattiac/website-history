@@ -1,0 +1,87 @@
+<html>
+<head>
+    <style>
+        input[type="text"] {
+          padding: 10px;
+          border: none;
+          border-bottom: solid 2px #c9c9c9;
+          transition: border 0.3s;
+        }
+
+        input[type="text"]:focus {
+            outline-width:0px;
+         padding: 10px;
+         border: none;
+          transition: border 0.3s;
+          border-bottom: solid 2px #969696;
+        }
+
+        form {
+            position:relative;
+            text-align:center;
+            top:40vh;
+        }
+
+        button {
+        font-family: Arial;
+        color: #ffffff;
+        font-size: 20px;
+        background: #4db4f0;
+        padding: 10px 40px 10px 40px;
+        border: solid #11689e 3px;
+        text-decoration: none;
+        position:fixed;
+        top:10vh;
+        left:80vw;
+        }
+
+        #container {
+        width:20vw;
+        height:100vh;
+        position:fixed;
+        left:80vw;
+        top:20vh;
+        background-color:white;
+        }
+
+        button:hover {
+          background: #3cb0fd;
+          text-decoration: none;
+        }
+
+        a, a:visited {
+            color:black;
+            text-decoration:none;
+            }
+
+
+    </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function(){
+
+            $("#login").click(function(){
+                $(this).toggle();
+            });
+
+        });
+</script>
+
+</head>
+<body>
+<!--<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>-->
+<div id="login" style="position:fixed;width:100vw;height:100vh;background-color:red;">
+    <form>
+        <input autofocus type="text" name="compID" >
+        <input  id="form" type="submit" value="enter">
+    </form>
+
+</div>
+<!--<button>submit</button>-->
+<!--<div id="container">-->
+        <!--<div><a href="//google.com">google</a></div>-->
+        <!--<div><a href="//yahoo.com">yahoo</a></div>-->
+login
+</body>
+</html>

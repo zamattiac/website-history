@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IRC</title>
+        <link rel="stylesheet" type="text/css" href="standard.css">
+        <style>
+            header {
+            padding:25px;
+            text-color:black;
+            font-size:45px;
+            font-family:Verdana;
+            background-color:rgba(229,229,229,.75);
+
+            }
+
+            footer {
+            padding:10px;
+            text-decoration:none;
+            vlink:black;
+            link:black;
+            font-family:Verdana;
+            background-color:lightgrey;
+            text-color:white;
+            position:absolute;
+            bottom:0px;
+            width:100vw;
+            }
+
+            .container {
+            position:absolute;
+            left:83vw;
+            top:2vh;
+            }
+
+            body {
+            width:100vw;
+            background-repeat:no-repeat;
+            background-size: 100vw;
+            max-width:100vw;
+            }
+
+            #rules {
+            background-color:rgba(199,196,191,.8);
+            position:absolute;
+            top:100vh;
+            width:100vw;
+            }
+
+            p{
+            text-align:justify;
+            font-size:20px;
+            padding-left:15vw;
+            padding-right:15vw;
+            padding-bottom:10vh;
+            }
+
+            text-justify:inter-word;
+            line-height:1.5;
+            }
+
+            #jokes {
+            background-color:#FFD7E5
+            top:110vh
+            }
+
+            html{max-width:100vw;overflow-x:hidden;}
+
+        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script>
+            $(window).scroll(function() {
+
+    if ($(this).scrollTop()>0)
+     {
+        $('#scroll').fadeOut();
+     }
+    else
+     {
+      $('#scroll').fadeIn();
+     }
+ });
+        </script>
+    </head>
+
+    <body background="files/backgrounds/background2.png">
+
+        <header>
+            international residence college
+            <div class="container">
+                <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#rules">About</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Events</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">People</a></li>
+                  <li role="presentation" class="divider"></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Resident Information</a></li>
+                </ul></div>
+            </div>
+        </header>
+
+        <div id="scroll" style="background-color:yellow;width:50px;height:50px;opacity:.6;position:absolute;left:30vw;top:500px;">
+            <img src="files/scroll.png" style="width:50px;height:50px;align:center;">
+        </div>
+
+
+        <div id="rules" style="line-height:1.5">
+            <h3>Welcome!</h3>
+            <p>The International Residential College (IRC) is a vibrant, enriching, residential and academic community for undergraduate students, both domestic (60%) and foreign (40%). It is the largest residential college at U.Va. with over 300 students who interact with world-class Faculty Fellows and US Ambassadors, take trips to explore the Charlottesville area,  and host a wide variety of cultural and social events.</p>
+
+        </div>
+
+        <footer>
+            at the <a href="http://virginia.edu"> <font size="3">university of virginia</font></a>
+        </footer>
+
+    <!--<div id="jokes">-->
+        <!--<p style="padding-left:500px;padding-top:50px">I have a friend named Poojer.</p>-->
+
+        <!--<p style="padding-left:750px;">Poojer? Where is her?</p>-->
+
+        <!--<p style="padding-right:750px;">Knock knock.</p>-->
+        <!--<p style="padding-right:500px;">Who's there?</p>-->
+        <!--<p style="padding-right:750px;">Do you have two CD's?</p>-->
+        <!--<p style="padding-right:500px;">Do you have to see deez nuts?</p>-->
+
+        <!--<p style="padding-left:500px;">Your integral is so very cool.</p>-->
+    <!--</div>-->
+
+    </body>
+
+</html>

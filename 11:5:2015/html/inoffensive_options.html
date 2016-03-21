@@ -1,0 +1,69 @@
+<html>
+<head>
+    <script>
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+d.toUTCString();
+    document.cookie = cname + "=" + cvalue + "; " + expires;
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1);
+        if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+    }
+    return "";
+}
+
+function checkCookie() {
+    var user = getCookie("username");
+    if (user != "") {
+        document.getElementById("name").innerHTML =
+        "::browsing as " + user.toLowerCase() + "::";
+    } else {
+        user = prompt("Sign in to confirm ESCIRC membership to access this protected resource. \n\n Michelle: Do not put Darty Jackson.","");
+        user = user.toLowerCase();
+        if (user != "" && user != null) {
+            setCookie("username", user, 365);
+        }
+    }
+}
+
+    </script>
+    <title>Naughty Words</title>
+</head>
+<link rel="stylesheet" href="standard.css" style="text/css">
+<body bgcolor="#FFFFE5" onload="checkCookie()"><center><h3>Inoffensive Terminology for Mature Discussion</h3></center>
+<div id="alert" style="position:absolute;
+            top:15px;
+            left:15px;
+            background-color:yellow;
+            border: 5px solid red;
+            border-style:dashed;">Check out our basic, boring new layout! <br> This page has been deprecated. <br><a href="escirc.html#discussion">Here</a></div>
+<!--<h2>Politically correct terms for engineering discourse:<br><br><br></h2>-->
+<!--<div id="vagina"><h4>Women:</h4><br>Vagine<br>Bagina<br>Vagine-machine<br>Vaginha<br>Virgina</div>-->
+<!--<div id="penis"><h4>Male:</h4><br>Penoa/penoit<br>Peen<br>Weewee</div>-->
+<!--<div id="butt"><h4>Everyone!</h4><br>Bootoir<br>Anise<br>Bunghole<br>Bungelow<br>Bhungra</div>-->
+<table align="center" cellpadding="10px" bgcolor="#FFFF99">
+    <tr><th class="penis"><p class="underline">Male terms</p></th><th class="vagina"><p class="underline">Female terms</p></th><th class="butt"><p class="underline">Backdoor Terms</p></th></tr>
+    <!--<tr><th class="penis"></th><br><th class="vagina"><br></th><th class="butt"><br></th></tr>-->
+    <tr><th class="penis">Dickle</th><th class="vagina">Coochella</th><th class="butt">Bouttoir</th></tr>
+    <tr><th class="penis">Penoa/pinoit</th><th class="vagina">Vaginha</th><th class="butt">Bungelow</th></tr>
+    <tr><th class="penis">Peen</th><th class="vagina">Bagina</th><th class="butt">Bhungra-hole</th></tr>
+    <tr><th class="penis">Philip</th><th class="vagina">Vagine</th><th class="butt">Anise</th></tr>
+    <tr><th class="penis">Jimmy</th><th class="vagina">Vagine-machine</th><th class="butt">Poop-chute</th></tr>
+    <tr><th class="penis"></th><th class="vagina">Vajayjay</th><th class="butt">Bunghole</th></tr>
+    <tr><th class="penis"></th><th class="vagina">University of Virgina</th><th class="butt"></th></tr>
+    <tr><th class="penis"></th><th class="vagina">Pooj</th><th class="butt"></th></tr>
+    <tr><th class="penis"></th><th class="vagina">Roberta Gwathmey</th><th class="butt"></th></tr>
+    </table>
+<h3>Further guidelines:</h3>
+<h3>Rule 1: <font size="1">(there are no rules!)</font> Don't let Kelly Asscheeks know!</h3>
+    <h3>Rule 2: <font size="1">(there are no rules!)</font> Michelle shut up!!</h3>
+<p id="name" style="position: absolute; bottom: 0px;"></p>
+</body>
+</html>

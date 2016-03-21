@@ -1,0 +1,32 @@
+table {
+    header
+    text-align:center;
+    font-weight:bold;
+    }
+
+th {
+    font-size:20;
+    }
+
+.penis {
+    text-align:left;
+    color:#99CCFF;
+    }
+
+.vagina {
+    text-align:center;
+    color:#FF99FF;
+    bg-color;light pink;}
+
+.butt {
+    text-align:right;
+    color:#904800;
+    }
+
+p {
+    text-decoration:underline;
+    }
+
+body {
+    text-align:center;
+    }

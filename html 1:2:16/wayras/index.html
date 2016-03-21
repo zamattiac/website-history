@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            Wayra's Cleaning Services
+        </title>
+
+        <link rel="stylesheet" type="text/css" href="wayras.css">
+        <link rel='shortcut icon' href="files/icon.png" type="image/png" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="/~mak2vr/wayras/name.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#english").click(function(){
+                    setCookie("language","english",20);
+                    $("#selectLanguage").hide();
+                })
+
+                $("#spanish").click(function(){
+                    $("#selectLanguage").hide();
+                    setCookie("language","spanish",20);
+                    window.location.assign("/~mak2vr/wayras/es");
+                })
+            })
+        </script>
+        <script>
+
+            $(window).scroll(function() {
+
+                if ($(this).scrollTop()>0) {
+                    $('#scroll').fadeOut();
+                    document.getElementById("header").style.width = "100vw";
+                    document.getElementById("header").style.left = "0vw";
+                    document.getElementById("header").style.top = "0vh";
+                    document.getElementById("header").style.opacity = ".9";
+                 }
+
+                else {
+                    $('#scroll').fadeIn();
+                    document.getElementById("header").style.width = "40vw";
+                    document.getElementById("header").style.left = "4vw";
+                    document.getElementById("header").style.top = "6vh";
+                    document.getElementById("header").style.opacity = "1";
+                 }
+
+    });
+
+
+        </script>
+        <script>
+            (function() { var s = document.createElement("script");
+            s.async = true;
+            s.onload = s.onreadystatechange = function(){
+            getYelpWidget("the-white-house-washington","500","RED","y","y","2");
+            };
+            s.src='http://chrisawren.com/widgets/yelp/yelpv2.js' ;
+            var x = document.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);})();
+        </script>
+    </head>
+
+    <?php
+
+        if (!isset($_COOKIE["language"])) {
+            $selectWindow = fopen("selectwindow.html", "r");
+            echo fread($selectWindow,filesize("selectwindow.html"));
+            fclose($selectWindow);
+        }
+
+        ?>
+
+    <body>
+
+        <header id="header">
+            Wayra's Cleaning Services
+            <div id="menu">
+                <a href="#contact">contact us</a>
+                <a href="#yelpwidget">yelp reviews</a>
+                <a href="/~mak2vr/wayras/es/">en espa&ntilde;ol</a>
+            </div>
+        </header>
+
+
+            <img src="//www.streaklessclean.com/images/cleaningsupplies1.jpg" width="700" style="position:relative;left:40vw;top:10vh;">
+
+        <div id="scroll">
+            <img src="/~mak2vr/files/scroll.png" style="width:50px;height:50px;align:center;">
+        </div>
+		<div id="footer">
+        	    <!--at the <a href="http://virginia.edu" id="jrcirc"> <font size="3">university of virginia</font></a>-->
+            fully bonded, licensed, and insured
+        </div>
+        <div id="contact">
+            <h2>
+                Contact us today!
+            </h2>
+
+            <!--<div>-->
+                <div style="float: left;padding:100px;">
+                    <h3>By phone:</h3>
+                    <h4>240-645-2478</h4>
+                    <h4>571-426-5138 (EN)</h4>
+                    <h4>301-283-1290 (ES)</h4>
+                </div>
+                <div>
+                    <h3>Email:</h3>
+                    wayrascleaningservice@gmail.com<br><br>
+                    <form action="MAILTO:zamattiac@gmail.com" method="post" enctype="text/plain">
+                    Name:<br>
+                    <input type="text" name="name" value="your name"><br><br>
+                    Email:<br>
+                    <input type="text" name="mail" value="your email"><br><br>
+                    Comment:<br>
+                    <input type="text" name="comment" value="your comment" size="50"><br><br>
+                    <input type="submit" value="Send">
+                    <input type="reset" value="Reset">
+                        <span style="font-size:10px;">New window will open to send.</span>
+                    </form>
+                </div>
+            <!--</div>-->
+
+        </div>
+       <!--<div id="yelp">-->
+           <div id='yelpwidget'></div>
+       <!--</div>-->
+    </body>
+</html>

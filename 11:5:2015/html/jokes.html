@@ -1,0 +1,73 @@
+<html>
+<head>
+    <title>Jokes</title>
+    <script>
+        function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+d.toUTCString();
+    document.cookie = cname + "=" + cvalue + "; " + expires;
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1);
+        if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+    }
+    return "";
+}
+
+function checkCookie() {
+    var user = getCookie("username");
+    if (user != "") {
+        document.getElementById("name").innerHTML =
+        "::browsing as " + user.toLowerCase() + "::";
+    } else {
+        user = prompt("Sign in to confirm ESCIRC membership to access this protected resource. \n\n Michelle: Do not put Darty Jackson.","");
+        user = user.toLowerCase();
+        if (user != "" && user != null) {
+            setCookie("username", user, 365);
+        }
+    }
+}
+
+    </script>
+
+    <link rel="stylesheet" href="standard.css">
+
+</head>
+
+<body  onload="checkCookie()" bgcolor="#FFD7E5">
+
+<div id="alert" style="position:absolute;
+            top:15px;
+            left:15px;
+            background-color:yellow;
+            border: 5px solid red;
+            border-style:dashed;">Check out our basic, boring new layout! <br> This page has been deprecated. <br><a href="escirc.html#jokes">Here</a></div>
+    <!--<form type="POST">-->
+        <!---->
+        <!--<input text>-->
+        <!---->
+    <!--</form>-->
+    <h3 id="name" style="padding:0px 0px 0px 0px;"></h3>
+    <p style="padding-left:500px;padding-top:50px">I have a friend named Poojer.</p>
+
+    <p style="padding-left:750px;">Poojer? Where is her?</p>
+
+    <p style="padding-right:750px;">Knock knock.</p>
+    <p style="padding-right:500px;">Who's there?</p>
+    <p style="padding-right:750px;">Do you have two CD's?</p>
+    <p style="padding-right:500px;">Do you have to see deez nuts?</p>
+
+    <p style="padding-left:500px;">Your integral is so very cool.</p>
+
+</body>
+</html>
+
+
+
+

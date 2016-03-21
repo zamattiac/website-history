@@ -1,0 +1,75 @@
+<InitMainVars>
+PS_DIRECTORY ** Not Set ** 
+ argv[0] is 'D:\\dsrc\i486_nt\obj\ptcsetup.exe'
+ Try to figure it out now 
+ Path1 NOW: D:\dsrc\i486_nt\obj\ptcsetup.exe
+Now look for: D:\dsrc\text\compiled_resource\ps_default_resources.dll
+Found D:\dsrc\text\compiled_resource\ps_default_resources.dll
+ Resource file exists at: D:\dsrc\text\compiled_resource\ps_default_resources.dll
+ So, set PS_DIRECTORY to: D:\dsrc
+PTC_CDHOME ** Not Set ** 
+Now look for: D:\ptc_inst\cdmaster.ptc
+ So, set PTC_CDHOME to: D:\
+<PsGetVar> Failed for: PTC_CDHOME
+DPS_DIRECTORY ** Not Set ** 
+ So, set DPS_DIRECTORY to: D:\dsrc
+DONE <InitMainVars>
+<PsCd::PsCd> (D:\)
+<PsGetVar> Failed for: PS_INF_PATH
+<PsGetVar> Failed for: PS_INF_FILE
+ptc_inf_path: D:\ptc_inst\ptc.inf
+<PsGetVar> Failed for: PS_ARCH_DB
+<PsInfFile::ReadInf> 'D:\ptc_inst\ptc.inf'
+PsCD::LoadSummary
+PsInfFile::ReadInf ignoreCluster = 1
+Start of ReadInf time stamp: Sat Aug 29 10:23:57 Pacific Daylight Time 2015
+End of ReadInf time stamp: Sat Aug 29 10:23:57 Pacific Daylight Time 2015
+Init Translation/Message system
+
+ ---------------------------------- 
+ |      Welcome to PTC.Setup      | 
+ ---------------------------------- 
+ Time: Sat Aug 29 10:23:58 Pacific Daylight Time 2015
+ Host: Matt.Virginia.EDU
+ Machine type: i486_nt
+ User: Matt
+ CurDir: D:\
+ PTC.Setup build info: Jun 15 2011 17:47:37
+ get_internal_version(): L-03-44
+ --------------------------------------------
+
+<PsGetVar> Failed for: PS_CDMASTER
+<PsCd::readResfile> cdmaster.ptc
+<PsCd::addProduct> (mathcad)
+    <PsInstall::PsInstall> loadpoint: 
+    <PsInstall::Refresh> Path: ''
+Returning from PsInstall::Refresh because Path.IsEmpty
+<PsProduct::SetLoadpoint> new loadpoint: 
+ConvertDBAdd __PSF_COMMENT__ '//'
+<PsProduct::readResfile> D:\ptc_inst\mathcad.ptc
+<PsCd::addProduct> (flexlm)
+    <PsInstall::PsInstall> loadpoint: 
+    <PsInstall::Refresh> Path: ''
+Returning from PsInstall::Refresh because Path.IsEmpty
+<PsProduct::SetLoadpoint> new loadpoint: 
+ConvertDBAdd __PSF_COMMENT__ '//'
+<PsProduct::readResfile> D:\ptc_inst\flexlm.ptc
+PsPackage:: Setting up ezActions for pkg: uninstall
+PsPackage:: Setting up ezActions for pkg: ptcutil
+current flexver: 6.1
+default flexver: 6.1
+set_unihttp CB to PsDownloadAuth
+ClickWrapLA: clickwrap_la
+set_unihttp CB to PsDownloadAuth
+ConvertDBAdd __HOSTID__ '08-00-27-B5-F4-BC'
+ConvertDBAdd __PRODUCT__ 'Mathcad'
+ConvertDBAdd __RELNUM__ '15.0'
+ConvertDBAdd __DCODE__ 'M010'
+<SetDlgBrowse> ScreenStudentLic.StudentLicFileBrowse - ScreenStudentLic.StudentLicFile type:2
+DirList.GetSize() = 16
+Generic InitFunc: ScreenDftCmds
+PsSetCompVal failed for ScreenServlet
+BEGIN ScreenWebPub::InitFunc()
+<LpcfgDcadCmd::InitFunc>
+ConvertDBAdd __WEBBROWSER__ 'netscape'
+Setup ScreenWelcome

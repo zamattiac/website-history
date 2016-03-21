@@ -1,0 +1,193 @@
+<InitMainVars>
+PS_DIRECTORY ** Not Set ** 
+ argv[0] is 'D:\\dsrc\i486_nt\obj\ptcsetup.exe'
+ Try to figure it out now 
+ Path1 NOW: D:\dsrc\i486_nt\obj\ptcsetup.exe
+Now look for: D:\dsrc\text\compiled_resource\ps_default_resources.dll
+Found D:\dsrc\text\compiled_resource\ps_default_resources.dll
+ Resource file exists at: D:\dsrc\text\compiled_resource\ps_default_resources.dll
+ So, set PS_DIRECTORY to: D:\dsrc
+PTC_CDHOME ** Not Set ** 
+Now look for: D:\ptc_inst\cdmaster.ptc
+ So, set PTC_CDHOME to: D:\
+<PsGetVar> Failed for: PTC_CDHOME
+DPS_DIRECTORY ** Not Set ** 
+ So, set DPS_DIRECTORY to: D:\dsrc
+DONE <InitMainVars>
+<PsCd::PsCd> (D:\)
+<PsGetVar> Failed for: PS_INF_PATH
+<PsGetVar> Failed for: PS_INF_FILE
+ptc_inf_path: D:\ptc_inst\ptc.inf
+<PsGetVar> Failed for: PS_ARCH_DB
+<PsInfFile::ReadInf> 'D:\ptc_inst\ptc.inf'
+PsCD::LoadSummary
+PsInfFile::ReadInf ignoreCluster = 1
+Start of ReadInf time stamp: Sat Aug 29 10:24:04 Pacific Daylight Time 2015
+End of ReadInf time stamp: Sat Aug 29 10:24:04 Pacific Daylight Time 2015
+Init Translation/Message system
+
+ ---------------------------------- 
+ |      Welcome to PTC.Setup      | 
+ ---------------------------------- 
+ Time: Sat Aug 29 10:24:04 Pacific Daylight Time 2015
+ Host: Matt.Virginia.EDU
+ Machine type: i486_nt
+ User: Matt
+ CurDir: D:\
+ PTC.Setup build info: Jun 15 2011 17:47:37
+ get_internal_version(): L-03-44
+ --------------------------------------------
+
+<PsGetVar> Failed for: PS_CDMASTER
+<PsCd::readResfile> cdmaster.ptc
+<PsCd::addProduct> (mathcad)
+    <PsInstall::PsInstall> loadpoint: 
+    <PsInstall::Refresh> Path: ''
+Returning from PsInstall::Refresh because Path.IsEmpty
+<PsProduct::SetLoadpoint> new loadpoint: 
+ConvertDBAdd __PSF_COMMENT__ '//'
+<PsProduct::readResfile> D:\ptc_inst\mathcad.ptc
+<PsCd::addProduct> (flexlm)
+    <PsInstall::PsInstall> loadpoint: 
+    <PsInstall::Refresh> Path: ''
+Returning from PsInstall::Refresh because Path.IsEmpty
+<PsProduct::SetLoadpoint> new loadpoint: 
+ConvertDBAdd __PSF_COMMENT__ '//'
+<PsProduct::readResfile> D:\ptc_inst\flexlm.ptc
+PsPackage:: Setting up ezActions for pkg: uninstall
+PsPackage:: Setting up ezActions for pkg: ptcutil
+current flexver: 6.1
+default flexver: 6.1
+set_unihttp CB to PsDownloadAuth
+ClickWrapLA: clickwrap_la
+set_unihttp CB to PsDownloadAuth
+ConvertDBAdd __HOSTID__ '08-00-27-B5-F4-BC'
+ConvertDBAdd __PRODUCT__ 'Mathcad'
+ConvertDBAdd __RELNUM__ '15.0'
+ConvertDBAdd __DCODE__ 'M010'
+<SetDlgBrowse> ScreenStudentLic.StudentLicFileBrowse - ScreenStudentLic.StudentLicFile type:2
+DirList.GetSize() = 16
+Generic InitFunc: ScreenDftCmds
+PsSetCompVal failed for ScreenServlet
+BEGIN ScreenWebPub::InitFunc()
+<LpcfgDcadCmd::InitFunc>
+ConvertDBAdd __WEBBROWSER__ 'netscape'
+Setup ScreenWelcome
+ScreenWelcome::DisplayLA - CountrySelected: 
+Which License Agreement will we display: clickwrap_la
+The Current UI Language: usascii
+License Agreement Found: D:\dsrc\text\usascii\clickwrap_la.txt
+pushed is product btnScreenWelcome.ProdButton.0
+ScreenWelcome PostFunc Dir = 1
+ConvertDBAdd __INSTBLE__ 'Mathcad'
+ConvertDBAdd __PRODUCT__ 'Mathcad'
+ScreenWelcome Product::PreCheck for: Mathcad
+PsProductMathcad_precheck called.
+Testing for PreReq .NET 3.5 SP 1 
+PsDotNetFrameworkInstalled: found : v3.5  [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.5]
+	Looking for SP 1
+	Found SP 1
+Testing for PreReq IE >= 5.0 
+                   IE == 9.11.9600.17416
+Testing for PreReq MSXML 4.2 
+C:\Windows\system32\msxml3.dll Version == 8.110.0.9600
+C:\Windows\system32\msxml3r.dll Version == 8.110.0.9600
+C:\Windows\system32\msxml6.dll Version == 6.30.0.9600
+C:\Windows\system32\msxml6r.dll Version == 6.30.0.9600
+C:\Windows\winsxs\amd64_microsoft-windows-msxml30_31bf3856ad364e35_6.3.9600.17415_none_79793b816a939538\msxml3.dll Version == 8.110.0.9600
+C:\Windows\winsxs\amd64_microsoft-windows-msxml30_31bf3856ad364e35_6.3.9600.17415_none_79793b816a939538\msxml3r.dll Version == 8.110.0.9600
+C:\Windows\winsxs\amd64_microsoft-windows-msxml60_31bf3856ad364e35_6.3.9600.17415_none_7978f7296a93e21b\msxml6.dll Version == 6.30.0.9600
+C:\Windows\winsxs\amd64_microsoft-windows-msxml60_31bf3856ad364e35_6.3.9600.17415_none_7978f7296a93e21b\msxml6r.dll Version == 6.30.0.9600
+C:\Windows\winsxs\wow64_microsoft-windows-msxml30_31bf3856ad364e35_6.3.9600.17415_none_83cde5d39ef45733\msxml3.dll Version == 8.110.0.9600
+C:\Windows\winsxs\wow64_microsoft-windows-msxml30_31bf3856ad364e35_6.3.9600.17415_none_83cde5d39ef45733\msxml3r.dll Version == 8.110.0.9600
+C:\Windows\winsxs\wow64_microsoft-windows-msxml60_31bf3856ad364e35_6.3.9600.17415_none_83cda17b9ef4a416\msxml6.dll Version == 6.30.0.9600
+C:\Windows\winsxs\wow64_microsoft-windows-msxml60_31bf3856ad364e35_6.3.9600.17415_none_83cda17b9ef4a416\msxml6r.dll Version == 6.30.0.9600
+Raise Error DialogMSXML 4.0 SP2 provides support for XML parsing in Mathcad.  This exact version of MSXML is required. You may not use a later version. 
+Please click on the link above to acquire this specific version. Multiple versions of MSXML may coexist on your system.
+msi.dll Version == 5.0
+Testing for PreReq Acrobat Reader
+Raise Error DialogIn order to view the PDF documentation provided for Mathcad 15, you must have Adobe Acrobat Reader installed on your system.
+Click the link below to download an Acrobat installer of your choice.
+IsVista() returning = 0
+IsWindows7() returning = 0
+Testing for XP SP >= 2.0 
+            XP SP == 0
+Raise Error DialogYou are running Windows XP, but do not have Service Pack 2 (SP2) or higher installed.  This is a minimum system requirement for Mathcad 15.0 M010.  Please upgrade your system
+pushed is product btnScreenWelcome.ProdButton.0
+ScreenWelcome PostFunc Dir = 1
+ConvertDBAdd __INSTBLE__ 'Mathcad'
+ConvertDBAdd __PRODUCT__ 'Mathcad'
+ScreenWelcome Product::PreCheck for: Mathcad
+PsProductMathcad_precheck called.
+Testing for PreReq .NET 3.5 SP 1 
+PsDotNetFrameworkInstalled: found : v3.5  [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.5]
+	Looking for SP 1
+	Found SP 1
+Testing for PreReq IE >= 5.0 
+                   IE == 9.11.9600.17416
+Testing for PreReq MSXML 4.2 
+C:\Windows\system32\msxml3.dll Version == 8.110.0.9600
+C:\Windows\system32\msxml3r.dll Version == 8.110.0.9600
+C:\Windows\system32\msxml4.dll Version == 4.20.0.9818
+C:\Windows\system32\msxml4r.dll Version == 4.10.0.9404
+C:\Windows\system32\msxml6.dll Version == 6.30.0.9600
+C:\Windows\system32\msxml6r.dll Version == 6.30.0.9600
+C:\Windows\winsxs\amd64_microsoft-windows-msxml30_31bf3856ad364e35_6.3.9600.17415_none_79793b816a939538\msxml3.dll Version == 8.110.0.9600
+C:\Windows\winsxs\amd64_microsoft-windows-msxml30_31bf3856ad364e35_6.3.9600.17415_none_79793b816a939538\msxml3r.dll Version == 8.110.0.9600
+C:\Windows\winsxs\amd64_microsoft-windows-msxml60_31bf3856ad364e35_6.3.9600.17415_none_7978f7296a93e21b\msxml6.dll Version == 6.30.0.9600
+C:\Windows\winsxs\amd64_microsoft-windows-msxml60_31bf3856ad364e35_6.3.9600.17415_none_7978f7296a93e21b\msxml6r.dll Version == 6.30.0.9600
+C:\Windows\winsxs\wow64_microsoft-windows-msxml30_31bf3856ad364e35_6.3.9600.17415_none_83cde5d39ef45733\msxml3.dll Version == 8.110.0.9600
+C:\Windows\winsxs\wow64_microsoft-windows-msxml30_31bf3856ad364e35_6.3.9600.17415_none_83cde5d39ef45733\msxml3r.dll Version == 8.110.0.9600
+C:\Windows\winsxs\wow64_microsoft-windows-msxml60_31bf3856ad364e35_6.3.9600.17415_none_83cda17b9ef4a416\msxml6.dll Version == 6.30.0.9600
+C:\Windows\winsxs\wow64_microsoft-windows-msxml60_31bf3856ad364e35_6.3.9600.17415_none_83cda17b9ef4a416\msxml6r.dll Version == 6.30.0.9600
+C:\Windows\winsxs\x86_microsoft.msxml2r_6bd6b9abf345378f_4.1.0.0_none_3658456fda6654f6\msxml4r.dll Version == 4.10.0.9404
+C:\Windows\winsxs\x86_microsoft.msxml2_6bd6b9abf345378f_4.20.9818.0_none_b7e811947b297f6d\msxml4.dll Version == 4.20.0.9818
+Search criteria matches MSXML == 4.20.0.9818
+msi.dll Version == 5.0
+Testing for PreReq Acrobat Reader
+Raise Error DialogIn order to view the PDF documentation provided for Mathcad 15, you must have Adobe Acrobat Reader installed on your system.
+Click the link below to download an Acrobat installer of your choice.
+IsVista() returning = 0
+IsWindows7() returning = 0
+ScreenWelcome::DisplayLA - CountrySelected: 
+Which License Agreement will we display: clickwrap_la
+The Current UI Language: usascii
+License Agreement Found: D:\dsrc\text\usascii\clickwrap_la.txt
+pushed is product btnScreenWelcome.ProdButton.0
+ScreenWelcome PostFunc Dir = 1
+ConvertDBAdd __INSTBLE__ 'Mathcad'
+ConvertDBAdd __PRODUCT__ 'Mathcad'
+ScreenWelcome Product::PreCheck for: Mathcad
+PsProductMathcad_precheck called.
+Testing for PreReq .NET 3.5 SP 1 
+PsDotNetFrameworkInstalled: found : v3.5  [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.5]
+	Looking for SP 1
+	Found SP 1
+Testing for PreReq IE >= 5.0 
+                   IE == 9.11.9600.17416
+Testing for PreReq MSXML 4.2 
+C:\Windows\system32\msxml3.dll Version == 8.110.0.9600
+C:\Windows\system32\msxml3r.dll Version == 8.110.0.9600
+C:\Windows\system32\msxml4.dll Version == 4.20.0.9818
+C:\Windows\system32\msxml4r.dll Version == 4.10.0.9404
+C:\Windows\system32\msxml6.dll Version == 6.30.0.9600
+C:\Windows\system32\msxml6r.dll Version == 6.30.0.9600
+C:\Windows\winsxs\amd64_microsoft-windows-msxml30_31bf3856ad364e35_6.3.9600.17415_none_79793b816a939538\msxml3.dll Version == 8.110.0.9600
+C:\Windows\winsxs\amd64_microsoft-windows-msxml30_31bf3856ad364e35_6.3.9600.17415_none_79793b816a939538\msxml3r.dll Version == 8.110.0.9600
+C:\Windows\winsxs\amd64_microsoft-windows-msxml60_31bf3856ad364e35_6.3.9600.17415_none_7978f7296a93e21b\msxml6.dll Version == 6.30.0.9600
+C:\Windows\winsxs\amd64_microsoft-windows-msxml60_31bf3856ad364e35_6.3.9600.17415_none_7978f7296a93e21b\msxml6r.dll Version == 6.30.0.9600
+C:\Windows\winsxs\wow64_microsoft-windows-msxml30_31bf3856ad364e35_6.3.9600.17415_none_83cde5d39ef45733\msxml3.dll Version == 8.110.0.9600
+C:\Windows\winsxs\wow64_microsoft-windows-msxml30_31bf3856ad364e35_6.3.9600.17415_none_83cde5d39ef45733\msxml3r.dll Version == 8.110.0.9600
+C:\Windows\winsxs\wow64_microsoft-windows-msxml60_31bf3856ad364e35_6.3.9600.17415_none_83cda17b9ef4a416\msxml6.dll Version == 6.30.0.9600
+C:\Windows\winsxs\wow64_microsoft-windows-msxml60_31bf3856ad364e35_6.3.9600.17415_none_83cda17b9ef4a416\msxml6r.dll Version == 6.30.0.9600
+C:\Windows\winsxs\x86_microsoft.msxml2r_6bd6b9abf345378f_4.1.0.0_none_3658456fda6654f6\msxml4r.dll Version == 4.10.0.9404
+C:\Windows\winsxs\x86_microsoft.msxml2_6bd6b9abf345378f_4.20.9818.0_none_b7e811947b297f6d\msxml4.dll Version == 4.20.0.9818
+Search criteria matches MSXML == 4.20.0.9818
+msi.dll Version == 5.0
+Testing for PreReq Acrobat Reader
+IsVista() returning = 0
+IsWindows7() returning = 0
+main_dlg->Activate FAILED!
+STATUS my_main: 0
+main_dlg->Activate FAILED!
+STATUS my_main: 0
